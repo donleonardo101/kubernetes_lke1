@@ -6,7 +6,7 @@ metadata:
   name: mongo-express
 spec:
   rules:
-  - host: amperum.xyz
+  - host: kub.amperum.xyz
     http:
       paths:
       - path: /

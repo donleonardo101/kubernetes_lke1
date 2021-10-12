@@ -62,3 +62,9 @@ helm repo update
 helm install nginx-ingress ingress-nginx/ingress-nginx --set controller.publishService.enabled=true
 
 kubectl get svc
+
+kubectl apply -f ../test-ingress.yaml
+
+#Warning: extensions/v1beta1 Ingress is deprecated in v1.14+, unavailable in v1.22+; use networking.k8s.io/v1 Ingress
+
+kubectl scale --replicas=0 statefulset/mongodb
